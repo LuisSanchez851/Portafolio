@@ -73,7 +73,7 @@ function Proyectos() {
               nombre: "Sistema de Gestión Empresarial",
               descripcion:
                 "Desarrollo fullstack para control de inventarios, ventas y clientes. Incluye autenticación, API REST y dashboards.",
-              imagen: "/src/assets/img/imagen.jpeg",
+              imagen: "/public/assets/img/imagen.jpeg",
               tecnologias: ["React", "Node.js", "MySQL", "Tailwind"],
               enlace: "https://github.com/",
             },
@@ -81,7 +81,7 @@ function Proyectos() {
               nombre: "Plataforma E-learning",
               descripcion:
                 "Plataforma educativa con control de cursos, usuarios, pagos y backend escalable con Node y MongoDB.",
-              imagen: "/src/assets/img/ImagenRefeKoyag.png",
+              imagen: "/public/assets/img/ImagenRefeKoyag.png",
               tecnologias: ["React", "MongoDB", "Express", "Docker"],
               enlace: "https://github.com/",
             },
@@ -89,7 +89,7 @@ function Proyectos() {
               nombre: "Web para agencia creativa",
               descripcion:
                 "Sitio web responsive, rápido y accesible para una agencia de diseño. Animaciones con Framer Motion.",
-              imagen: "/src/assets/img/imagen.jpeg",
+              imagen: "/public/assets/img/imagen.jpeg",
               tecnologias: ["Next.js", "Tailwind", "Framer Motion"],
               enlace: "https://github.com/",
             },
@@ -141,7 +141,7 @@ function Proyectos() {
       {/* Footer */}
       <footer className="text-center py-8 flex flex-col items-center gap-3">
         <img
-          src="/src/assets/img/Logo LS.png"
+          src="/public/assets/img/Logo-LS.png"
           alt="Logo Luis Sanchez"
           className="w-14 h-14"
         />

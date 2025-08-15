@@ -24,7 +24,7 @@ function Blog() {
       fecha: "Junio 20, 2025",
       descripcion:
         "Guía sobre cómo crear un portafolio que no solo muestre tus proyectos, sino también tu perfil profesional.",
-      imagen: "/src/assets/img/imagen.jpeg",
+      imagen: "/public/assets/img/imagen.jpeg", // ✅ ruta corregida
       enlace: "/blog/post-1",
     },
     {
@@ -32,7 +32,7 @@ function Blog() {
       fecha: "Mayo 14, 2025",
       descripcion:
         "Herramientas, sitios y librerías que te facilitan la vida como desarrollador frontend.",
-      imagen: "/src/assets/img/ImagenRefeKoyag.png",
+      imagen: "/public/assets/img/ImagenRefeKoyag.png", // ✅ ruta corregida
       enlace: "#",
     },
     {
@@ -40,7 +40,7 @@ function Blog() {
       fecha: "Abril 02, 2025",
       descripcion:
         "Cómo migré un backend monolítico a microservicios usando Node.js, Docker y otras tecnologías.",
-      imagen: "/src/assets/img/imagen.jpeg",
+      imagen: "/public/assets/img/imagen.jpeg",
       enlace: "#",
     },
     {
@@ -48,7 +48,7 @@ function Blog() {
       fecha: "Marzo 10, 2025",
       descripcion:
         "Técnicas, herramientas y hábitos que me han ayudado a ser más productivo en desarrollo.",
-      imagen: "/src/assets/img/imagen.jpeg",
+      imagen: "/public/assets/img/imagen.jpeg",
       enlace: "#",
     },
     {
@@ -56,7 +56,7 @@ function Blog() {
       fecha: "Febrero 18, 2025",
       descripcion:
         "Desde los fundamentos hasta componentes avanzados para dominar Tailwind CSS.",
-      imagen: "/src/assets/img/imagen.jpeg",
+      imagen: "/public/assets/img/imagen.jpeg",
       enlace: "#",
     },
     {
@@ -64,7 +64,7 @@ function Blog() {
       fecha: "Enero 8, 2025",
       descripcion:
         "Ventajas y desventajas de cada uno. Cuándo usar REST, cuándo GraphQL y en qué casos combinarlos.",
-      imagen: "/src/assets/img/imagen.jpeg",
+      imagen: "/public/assets/img/imagen.jpeg",
       enlace: "#",
     },
   ];
@@ -155,7 +155,7 @@ function Blog() {
       {/* Footer */}
       <footer className="text-center py-8 flex flex-col items-center gap-3">
         <img
-          src="/src/assets/img/Logo LS.png"
+          src="/public/assets/img/Logo-LS.png"
           alt="Logo Luis Sanchez"
           className="w-14 h-14"
         />

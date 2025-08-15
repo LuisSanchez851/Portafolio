@@ -67,7 +67,7 @@ function BlogPost() {
               ayude a destacar en el mundo del desarrollo.
             </p>
             <img
-              src="/src/assets/img/imagen.jpeg"
+              src="/assets/img/imagen.jpeg"
               alt="Imagen del post"
               className="w-full rounded-xl mt-8"
             />
@@ -125,7 +125,7 @@ function BlogPost() {
       {/* Footer */}
       <footer className="text-center py-8 flex flex-col items-center gap-3">
         <img
-          src="/src/assets/img/Logo LS.png"
+          src="/public/assets/img/Logo LS.png"
           alt="Logo Luis Sanchez"
           className="w-14 h-14"
         />

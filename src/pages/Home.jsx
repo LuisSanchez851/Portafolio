@@ -62,10 +62,10 @@ function Home() {
             </h1>
 
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-              Siempre me ha apasionado entender cómo funcionan las cosas. Escribí
-              mi primer programa a los 8 años, mientras experimentaba con una
-              vieja computadora que había en casa. Desde ese momento supe que la
-              tecnología sería parte de mi vida.
+              Siempre me ha apasionado entender cómo funcionan las cosas.
+              Escribí mi primer programa a los 8 años, mientras experimentaba
+              con una vieja computadora que había en casa. Desde ese momento
+              supe que la tecnología sería parte de mi vida.
             </p>
 
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
@@ -81,15 +81,15 @@ function Home() {
             </p>
 
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Fuera del código, me apasiona aprender sobre innovación, leer sobre
-              tecnología, jugar videojuegos y compartir conocimiento.
+              Fuera del código, me apasiona aprender sobre innovación, leer
+              sobre tecnología, jugar videojuegos y compartir conocimiento.
             </p>
           </div>
 
           {/* Columna derecha - imagen y redes */}
           <div className="flex flex-col items-center gap-6">
             <img
-              src="/src/assets/img/Me.jpg"
+              src="/public/assets/img/Me.jpg"
               alt="Luis Sánchez"
               className="w-64 h-64 rounded-2xl object-cover"
             />
@@ -126,12 +126,12 @@ function Home() {
         <section className="w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw]">
           <div className="flex gap-4 overflow-x-auto px-4 py-4">
             {[
-              "/src/assets/img/Avion 2.jpg",
-              "/src/assets/img/paisaje 2.jpg",
-              "/src/assets/img/ME 2.jpg",
-              "/src/assets/img/Paisaje.jpg",
-              "/src/assets/img/Mar.jpg",
-              "/src/assets/img/Castillo.jpg",
+              "/public/assets/img/Avion-2.jpg",
+              "/public/assets/img/paisaje-2.jpg",
+              "/public/assets/img/ME-2.jpg",
+              "/public/assets/img/Paisaje.jpg",
+              "/public/assets/img/Mar.jpg",
+              "/public/assets/img/Castillo.jpg",
             ].map((img, idx) => (
               <img
                 key={idx}
@@ -150,19 +150,9 @@ function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="space-y-4">
-              <p>
-                🚀 Soy alguien que disfruta aprender y experimentar. Me
-                apasiona entender cómo funcionan las cosas y llevarlas al
-                siguiente nivel.
-              </p>
-              <p>
-                ✈️ Amante de los viajes, la naturaleza y las experiencias que
-                expanden la mente.
-              </p>
-              <p>
-                💡 Me encanta compartir conocimiento, mentorizar y crear
-                contenido.
-              </p>
+              <p>🚀 Soy alguien que disfruta aprender y experimentar.</p>
+              <p>✈️ Amante de los viajes y la naturaleza.</p>
+              <p>💡 Me encanta compartir conocimiento.</p>
               <p>🎯 Siempre estoy buscando nuevos retos.</p>
             </div>
 
@@ -174,7 +164,7 @@ function Home() {
                 <li>Inteligencia Artificial y Machine Learning</li>
                 <li>Desarrollo Web & Backend</li>
                 <li>Automatización y DevOps</li>
-                <li>Cine, fotografía y exploración de lugares</li>
+                <li>Cine, fotografía y exploración</li>
                 <li>Viajar y conocer otras culturas</li>
               </ul>
             </div>
@@ -190,19 +180,13 @@ function Home() {
             {[
               {
                 titulo: "Aprender Siempre",
-                texto:
-                  "Considero el aprendizaje constante como motor de crecimiento profesional y personal.",
+                texto: "El aprendizaje constante es clave.",
               },
               {
                 titulo: "Compromiso",
-                texto:
-                  "Cada proyecto que tomo lo trato como propio, siempre enfocado en la calidad y el impacto.",
+                texto: "Enfocado siempre en calidad e impacto.",
               },
-              {
-                titulo: "Compartir",
-                texto:
-                  "Creo que el conocimiento debe compartirse para generar un ecosistema colaborativo.",
-              },
+              { titulo: "Compartir", texto: "El conocimiento es para todos." },
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -226,10 +210,7 @@ function Home() {
           </h2>
           <div className="relative border-l-4 border-purple-500 ml-6 justify-center">
             {[
-              {
-                fecha: "2021",
-                evento: "Técnico en Mecatrónica - SENA",
-              },
+              { fecha: "2021", evento: "Técnico en Mecatrónica - SENA" },
               {
                 fecha: "2024",
                 evento: "Practicante en Koyag - Integraciones y QA",
@@ -258,7 +239,7 @@ function Home() {
       {/* Footer */}
       <footer className="text-center py-8 flex flex-col items-center gap-3">
         <img
-          src="/src/assets/img/Logo LS.png"
+          src="/public/assets/img/Logo-LS.png"
           alt="Logo Luis Sánchez"
           className="w-14 h-14"
         />

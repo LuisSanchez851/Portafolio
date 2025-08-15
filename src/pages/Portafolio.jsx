@@ -9,6 +9,11 @@ import {
   FaBlog,
 } from "react-icons/fa";
 
+// Helper para rutas robustas (respeta BASE_URL y encodea)
+const asset = (p) => encodeURI(`${import.meta.env.BASE_URL}${p.replace(/^\//, "")}`);
+// Fallback genérico (existe en tu carpeta)
+const FALLBACK = asset("assets/img/imagen.jpeg");
+
 function Portafolio() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -56,8 +61,9 @@ function Portafolio() {
         {/* Hero */}
         <section className="text-center">
           <img
-            src="/src/assets/img/Me.jpg"
+            src={asset("/public/assets/img/Me.jpg")}
             alt="Luis Sánchez"
+            onError={(e) => (e.currentTarget.src = FALLBACK)}
             className="w-24 h-24 rounded-full object-cover mx-auto"
           />
           <h1 className="text-4xl md:text-6xl font-extrabold mt-6">
@@ -80,7 +86,7 @@ function Portafolio() {
             {[
               {
                 id: 1,
-                logo: "/src/assets/img/Logo Brandstrat.webp",
+                logo: "/public/assets/img/Logo-Brandstrat.webp",
                 empresa: "Brandstrat",
                 cargo: "Practicante de Tecnología",
                 periodo: "Enero - Julio 2025",
@@ -89,7 +95,7 @@ function Portafolio() {
               },
               {
                 id: 2,
-                logo: "/src/assets/img/Logo Koyag.png",
+                logo: "/public/assets/img/Logo-Koyag.png",
                 empresa: "Koyag",
                 cargo: "Practicante de Tecnología",
                 periodo: "Enero - Julio 2024",
@@ -102,9 +108,10 @@ function Portafolio() {
                 className="group bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-6 cursor-pointer hover:scale-105 transition relative flex flex-col items-center text-center"
               >
                 <img
-                  src={exp.logo}
+                  src={asset(exp.logo)}
                   alt={exp.empresa}
-                  className="w-16 h-16 rounded-full mb-4"
+                  onError={(e) => (e.currentTarget.src = FALLBACK)}
+                  className="w-16 h-16 rounded-full mb-4 object-cover"
                 />
                 <div>
                   <p className="font-semibold">{exp.empresa}</p>
@@ -137,21 +144,21 @@ function Portafolio() {
             {[
               {
                 id: 1,
-                logo: "/src/assets/img/Logo Uniempresarial.png",
+                logo: "/public/assets/img/Logo-Uniempresarial.png",
                 titulo: "Ingeniería de Software",
                 proveedor: "Uniempresarial",
                 fecha: "2026",
               },
               {
                 id: 2,
-                logo: "/src/assets/img/platzi.png",
+                logo: "/public/assets/img/platzi-logo.png",
                 titulo: "Certificación en React Developer",
                 proveedor: "Platzi",
                 fecha: "2023",
               },
               {
                 id: 3,
-                logo: "/src/assets/img/Logo SENA.png",
+                logo: "/public/assets/img/Logo-SENA.png",
                 titulo: "Técnico en Mecatrónica",
                 proveedor: "SENA",
                 fecha: "2021",
@@ -162,9 +169,10 @@ function Portafolio() {
                 className="group bg-white dark:bg-neutral-900 rounded-2xl shadow-lg p-6 cursor-pointer hover:scale-105 transition relative flex flex-col items-center text-center"
               >
                 <img
-                  src={cert.logo}
+                  src={asset(cert.logo)}
                   alt={cert.proveedor}
-                  className="w-20 h-20 rounded-full mb-4"
+                  onError={(e) => (e.currentTarget.src = FALLBACK)}
+                  className="w-20 h-20 rounded-full mb-4 object-cover"
                 />
                 <div>
                   <p className="font-semibold">{cert.proveedor}</p>
@@ -191,29 +199,24 @@ function Portafolio() {
             Tecnologías Usadas
           </h3>
           <div className="flex flex-wrap justify-center gap-6 bg-white dark:bg-neutral-900 p-6 rounded-xl">
-            {[
-              "html",
-              "css",
-              "javascript",
-              "react2",
-              "tailwind",
-              "mysql",
-              "docker",
-            ].map((tech) => (
-              <img
-                key={tech}
-                src={`/src/assets/img/${tech}.png`}
-                alt={tech}
-                className="w-10 h-10"
-              />
-            ))}
+            {["html", "css", "javascript", "react2", "tailwind", "mysql", "docker"].map(
+              (tech) => (
+                <img
+                  key={tech}
+                  src={asset(`assets/img/${tech}.png`)}
+                  alt={tech}
+                  onError={(e) => (e.currentTarget.src = FALLBACK)}
+                  className="w-10 h-10"
+                />
+              )
+            )}
           </div>
         </section>
 
         {/* Botón Descargar CV */}
         <div className="mt-10 flex justify-center">
           <a
-            href="/src/assets/LuisSanchezCV.pdf"
+            href={asset("assets/LuisSanchezCV.pdf")}
             download
             className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg text-white font-semibold transition"
           >
@@ -225,8 +228,9 @@ function Portafolio() {
       {/* Footer */}
       <footer className="text-center py-8 flex flex-col items-center gap-3">
         <img
-          src="/src/assets/img/Logo LS.png"
+          src={asset("/public/assets/img/Logo-LS.png")}
           alt="Logo Luis Sanchez"
+          onError={(e) => (e.currentTarget.src = FALLBACK)}
           className="w-14 h-14"
         />
         <div className="flex gap-6 text-2xl">

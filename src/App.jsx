@@ -58,7 +58,7 @@ function App() {
         </a>
       </div>
 
-     {/* Botón modo oscuro */}
+      {/* Botón modo oscuro */}
       <div className="fixed top-6 right-6 z-50">
         <button
           onClick={() => setDarkMode(!darkMode)}
@@ -73,7 +73,7 @@ function App() {
           {/* Imagen de perfil */}
           <div className="flex justify-center">
             <img
-              src="/src/assets/img/Me.jpg"
+              src="/assets/img/Me.jpg" // CORREGIDO
               alt="Luis Sanchez"
               className="w-24 h-24 rounded-full object-cover"
             />
@@ -121,7 +121,7 @@ function App() {
               className="group relative min-w-[300px] md:min-w-[450px] rounded-2xl overflow-hidden shadow-lg cursor-pointer"
             >
               <img
-                src="/src/assets/img/imagen.jpeg"
+                src="/public/assets/img/imagen.jpeg" // CORREGIDO
                 alt="Base de datos completa"
                 className="w-full h-64 object-cover transition duration-500 group-hover:scale-105 group-hover:-rotate-2 group-hover:brightness-110"
               />
@@ -162,7 +162,7 @@ function App() {
               className="group relative min-w-[300px] md:min-w-[450px] rounded-2xl overflow-hidden shadow-lg cursor-pointer"
             >
               <img
-                src="/src/assets/img/ImagenRefeKoyag.png"
+                src="/assets/img/ImagenRefeKoyag.png" // CORREGIDO
                 alt="Tester e Integraciones a sistemas"
                 className="w-full h-64 object-cover transition duration-500 group-hover:scale-105 group-hover:-rotate-2 group-hover:brightness-110"
               />
@@ -202,7 +202,7 @@ function App() {
               className="group relative min-w-[300px] md:min-w-[450px] rounded-2xl overflow-hidden shadow-lg cursor-pointer"
             >
               <img
-                src="/src/assets/img/ImagenRefeKoyag.png"
+                src="/assets/img/ImagenRefeKoyag.png" // CORREGIDO
                 alt="Tester e Integraciones a sistemas"
                 className="w-full h-64 object-cover transition duration-500 group-hover:scale-105 group-hover:-rotate-2 group-hover:brightness-110"
               />
@@ -244,38 +244,38 @@ function App() {
           {/* Tecnologías */}
           <div className="flex justify-center gap-4 mt-8 bg-white dark:bg-neutral-900 px-6 py-5 rounded-xl">
             <img
-              src="/src/assets/img/html.png"
+              src="/assets/img/html.png" // CORREGIDO
               alt="HTML"
               className="w-9 h-9"
             />
-            <img src="/src/assets/img/css.png" alt="CSS" className="w-9 h-9" />
+            <img src="/assets/img/css.png" alt="CSS" className="w-9 h-9" />
             <img
-              src="/src/assets/img/javascript.png"
+              src="/assets/img/javascript.png" // CORREGIDO
               alt="JavaScript"
               className="w-9 h-9"
             />
             <img
-              src="/src/assets/img/react2.png"
+              src="/assets/img/react2.png" // CORREGIDO
               alt="React"
               className="w-9 h-9"
             />
             <img
-              src="/src/assets/img/piton.png"
+              src="/assets/img/piton.png" // CORREGIDO
               alt="Python"
               className="w-9 h-9"
             />
             <img
-              src="/src/assets/img/mysql.png"
+              src="/assets/img/mysql.png" // CORREGIDO
               alt="MySQL"
               className="w-9 h-9"
             />
             <img
-              src="/src/assets/img/tailwind.png"
+              src="/assets/img/tailwind.png" // CORREGIDO
               alt="Tailwind"
               className="w-9 h-9"
             />
             <img
-              src="/src/assets/img/docker.png"
+              src="/assets/img/docker.png" // CORREGIDO
               alt="Docker"
               className="w-9 h-9"
             />
@@ -362,7 +362,7 @@ function App() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <img
-                      src="/src/assets/img/Logo Brandstrat.webp"
+                      src="/assets/img/Logo-Brandstrat.webp" // CORREGIDO
                       alt="Brandstrat"
                       className="w-10 h-10 rounded-full"
                     />
@@ -382,7 +382,7 @@ function App() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <img
-                      src="/src/assets/img/Logo Koyag.png"
+                      src="/assets/img/Logo-Koyag.png" // CORREGIDO
                       alt="Koyag"
                       className="w-10 h-10 rounded-full"
                     />
@@ -509,13 +509,24 @@ function App() {
         </section>
       </main>
 
-      {/* Footer con logo */}
+{/* Footer */}
       <footer className="text-center py-8 flex flex-col items-center gap-3">
         <img
-          src="/src/assets/img/Logo LS.png"
-          alt="Logo Luis Sanchez"
+          src="/public/assets/img/Logo-LS.png"
+          alt="Logo Luis Sánchez"
           className="w-14 h-14"
         />
+        <div className="flex gap-6 text-2xl">
+          <a href="https://github.com/LuisSanchez851">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com/in/luis-sánchez-c-936b901b8/">
+            <FaLinkedin />
+          </a>
+          <a href="#">
+            <FaEnvelope />
+          </a>
+        </div>
         <p className="text-sm text-gray-500 dark:text-gray-400">
           © 2025 Luis Sánchez. Todos los derechos reservados.
         </p>

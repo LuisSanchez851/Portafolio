@@ -57,14 +57,14 @@ function BlogPost() {
         <article className="max-w-3xl mx-auto">
           <header className="mb-10">
             <h1 className="text-4xl md:text-5xl font-extrabold mt-4 text-center">
-              Creacion de base de datos desde cero
+              Creación de base de datos desde cero
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 mt-4 text-center">
               Una guía completa para construir un portafolio profesional que te
               ayude a destacar en el mundo del desarrollo.
             </p>
             <img
-              src="/src/assets/img/imagen.jpeg"
+              src="/public/assets/img/imagen.jpeg"
               alt="Imagen del post"
               className="w-full rounded-xl mt-8"
             />
@@ -125,7 +125,7 @@ function BlogPost() {
       {/* Footer */}
       <footer className="text-center py-8 flex flex-col items-center gap-3">
         <img
-          src="/src/assets/img/Logo LS.png"
+          src="/public/assets/img/Logo LS.png"
           alt="Logo Luis Sanchez"
           className="w-14 h-14"
         />
